@@ -1,0 +1,103 @@
+body {
+    background-color: #f0f0f0; /* Fondo gris claro */
+    margin: 0;
+    display: flex; /* Usamos flexbox para el diseño */
+    font-family: Arial, sans-serif; /* Aplica la fuente Arial a todo el cuerpo */
+}
+
+nav {
+    background-color: #333333; /* Navbar gris oscuro */
+    width: 150px; /* Ancho del navbar reducido */
+    height: 100vh; /* Altura del navbar */
+    display: flex;
+    flex-direction: column; /* Coloca los elementos de arriba hacia abajo */
+    align-items: center; /* Centra los elementos horizontalmente */
+    padding-top: 10px; /* Espacio en la parte superior reducido */
+    font-family: 'Modak', cursive; /* Aplica la fuente Modak al navbar */
+}
+
+nav img {
+    width: 120px; /* Ancho del logo ajustado */
+    height: auto; /* Mantiene la proporción del logo */
+    margin-bottom: 10px; /* Espacio debajo del logo para separarlo del texto */
+}
+
+.link {
+    color: #fff; /* Color del texto en blanco */
+    text-decoration: none; /* Sin subrayado */
+    margin-top: 10px; /* Espacio arriba del texto */
+    font-size: 25px; /* Tamaño de fuente */
+    text-align: center; /* Centrar el texto */
+}
+
+.link:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+}
+
+.copyright {
+    color: #fff; /* Color del texto en blanco */
+    font-size: 14px; /* Tamaño de fuente para el copyright */
+    margin-top: auto; /* Empuja el copyright hacia el fondo del navbar */
+    padding: 10px 0; /* Espacio arriba y abajo */
+    font-family: Arial, sans-serif; /* Cambia la fuente a Arial para el copyright */
+}
+
+.content {
+    padding: 20px; /* Espacio alrededor del contenido principal */
+    flex: 1; /* Ocupa el espacio restante */
+    display: flex; /* Usar flexbox para el contenido */
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra el contenido */
+    position: relative; /* Posicionamiento relativo para el icono de configuración */
+}
+
+.video-container {
+    position: relative; /* Permite posicionar el video */
+    width: 100%; /* Ancho completo */
+    max-width: 400px; /* Ancho máximo del video */
+    aspect-ratio: 9 / 16; /* Proporción 9:16 */
+    background-color: black; /* Fondo negro en caso de que no haya video */
+    border-radius: 15px; /* Bordes redondeados del contenedor del video */
+    overflow: hidden; /* Asegura que el contenido no sobresalga de los bordes redondeados */
+}
+
+.video {
+    width: 100%; /* Ancho del video */
+    height: 100%; /* Altura del video */
+    border-radius: 15px; /* Bordes redondeados del video */
+    position: absolute; /* Permite la animación de desplazamiento */
+    top: 0; /* Posiciona el video en la parte superior */
+    left: 0; /* Posiciona el video a la izquierda */
+    transition: transform 0.5s ease; /* Transición suave para el desplazamiento */
+}
+
+.settings-icon {
+    position: absolute; /* Posición absoluta para el icono de configuración */
+    top: 10px; /* Espacio desde la parte superior */
+    right: 10px; /* Espacio desde la derecha */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el icono */
+    width: 50px; /* Ancho del icono de configuración */
+    height: auto; /* Mantiene la proporción del icono */
+}
+
+.controls {
+    width: 100%; /* Ancho completo para los controles */
+    display: flex; /* Usar flexbox para los botones */
+    justify-content: space-between; /* Espacio entre los botones */
+    align-items: center; /* Centra verticalmente los botones */
+    margin-top: -350px; /* Aumentar la posición hacia arriba más */
+    padding: 0 20px; /* Espaciado lateral para el contenedor de controles */
+}
+
+.nav-button {
+    background-color: #333; /* Fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px; /* Espaciado interno del botón */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    font-size: 18px; /* Tamaño de fuente para el botón */
+}
+
+.nav-button:hover {
+    background-color: #555; /* Cambia el fondo al pasar el mouse */
+}
