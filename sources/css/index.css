@@ -1,12 +1,12 @@
 body {
-    background-color: #f0f0f0; /* Fondo gris claro */
+    background-color: #121212; /* Fondo gris claro */
     margin: 0;
     display: flex; /* Usamos flexbox para el diseño */
     font-family: Arial, sans-serif; /* Aplica la fuente Arial a todo el cuerpo */
 }
 
 nav {
-    background-color: #333333; /* Navbar gris oscuro */
+    background-color: #121212; /* Navbar gris oscuro */
     width: 150px; /* Ancho del navbar reducido */
     height: 100vh; /* Altura del navbar */
     display: flex;
